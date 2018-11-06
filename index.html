@@ -28,19 +28,19 @@
 
     .earth {
       background: url(night.jpg) repeat-x 0 0;
-      background-size: 320%;
+      background-size: cover;
       /* border: 1px solid rgba(26, 18, 101, 0.3); */
-      border-radius: 225px;
+      border-radius: 50%;
       box-shadow: 10px -2px 25px 0px #c1f0fd inset, 2px -1px 0px 0px #ffffffcc inset;
       height: 450px;
       left: 50%;
-      margin: -225px 0 0 -225px;
+      margin: 0 0 -225px -225px;
       position: absolute;
-      top: 50%;
+      bottom: 50%;
       width: 450px;
-      -webkit-animation: loop 200s linear infinite;
-      animation: loop 200s linear infinite;
-      -moz-animation: loop 200s linear infinite;
+      -webkit-animation: loop 100s linear infinite;
+      animation: loop 100s linear infinite;
+      -moz-animation: loop 100s linear infinite;
     }
 
     @-webkit-keyframes loop {
@@ -78,7 +78,7 @@
 
     .earth:before {
       content: "";
-      border-radius: 225px;
+      border-radius: 50%;
       box-shadow: -150px -6px 25px rgba(0, 0, 0, 0.7) inset;
       left: 0;
       position: absolute;
@@ -89,18 +89,15 @@
 
     @media screen and (max-width: 768px) {
       .earth {
-        /* display: none; */
-        border-radius: 180px;
         left: 50%;
         margin: 0px 0 0 -160px;
-        position: absolute;
-        top: 50%;
+        bottom: 10%;
         height: 320px;
         width: 320px;
       }
 
       .earth:before {
-        border-radius: 160px;
+        border-radius: 50%;
         box-shadow: -90px -6px 25px rgba(0, 0, 0, 0.7) inset;
         height: 320px;
         width: 320px;
